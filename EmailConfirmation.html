@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+  </style>
+</head>
+
+<body
+  style="margin:0; padding:0; background-color:#f4f4f4; font-family:'Mulish', 'Segoe UI', Arial, sans-serif; font-size:12pt; color:#333333;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f4f4; padding:20px;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0"
+          style="background-color:#ffffff; border-collapse:collapse; border-radius:8px; overflow:hidden;">
+          <tr>
+            <td style="padding:32px; font-family:'Mulish', 'Segoe UI', Arial, sans-serif;">
+              <div style="margin-bottom:24px;"> <img
+                  src="https://wsprodfileuksouth.blob.core.windows.net/intune-content/company-logo.svg"
+                  alt="WestSpring IT" width="220"
+                  style="display:block; border:0; outline:none; text-decoration:none; max-width:220px; height:auto;">
+              </div>
+              <p
+                style="margin:0 0 24px 0; color:#64748b; font-family:'Mulish', 'Segoe UI', Arial, sans-serif; font-size:11pt;">
+                Simply Different &bull; Simply Unlimited </p>
+              <p>Dear {{RequestorEmail}},</p>
+              <p> We are pleased to confirm that the user account for <strong>{{DisplayName}}</strong> has
+                been created successfully. </p>
+              <h3 style="margin:24px 0 10px 0; color:#1f2937;"> Account Information </h3>
+              <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; font-size:12pt;">
+                <tr>
+                  <td style="padding:10px; background-color:#f9fafb; border:1px solid #e5e7eb; width:35%;">
+                    <strong>Username</strong>
+                  </td>
+                  <td style="padding:10px; border:1px solid #e5e7eb;"> {{UserPrincipalName}} </td>
+                </tr>
+                <tr>
+                  <td style="padding:10px; background-color:#f9fafb; border:1px solid #e5e7eb;"> <strong>Credential
+                      Link</strong> </td>
+                  <td style="padding:10px; border:1px solid #e5e7eb;">
+                    <a href="{{OneTimeSecretURL}}" style="color:#2563eb; text-decoration:none; font-weight:500;">
+                      Click here to retrieve temporary credentials
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <h3 style="margin:24px 0 10px 0; color:#1f2937;"> Next Steps </h3>
+              <ul style="padding-left:20px; margin-top:0;">
+                <li>Click the link above to securely access the temporary credentials. This link expires after one
+                  viewing for enhanced security.</li>
+                <li>The user will be required to change the temporary password upon their first login.</li>
+                <li>Multi-Factor Authentication (MFA) registration will be prompted at initial sign-in.</li>
+              </ul>
+              <p style="font-size:10pt; color:#6b7280;"> For security reasons, temporary credentials are delivered
+                through a secure, one-time link and are not stored in email. Please ensure the end user accesses the
+                link promptly. </p>
+              <p> If you require any adjustments to this user account or encounter any issues, please contact our
+                support team at <a href="mailto:support@westspring-it.co.uk"
+                  style="color:#2563eb; text-decoration:none;"> support@westspring-it.co.uk </a>. </p>
+              <hr style="border:none; border-top:1px solid #e5e7eb; margin:32px 0;">
+              <p style="margin-bottom:0;"> Kind regards,<br> WestSpring IT Support Team </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
